@@ -1,9 +1,9 @@
 function firstChar(text) {
   // your code here
-	 if (text.length > 0) {
-    return text.charAt(0);
+	 if (text.length < 0) {
+		 return "";
   } else {
-    return ""; 
+    return text.charAt(0); 
   }
 }
 
