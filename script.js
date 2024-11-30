@@ -1,8 +1,11 @@
 function firstChar(text) {
   // your code here
-	 if (text == "" || text ==" " || text.charAt(0) == " ") {
+	 if (text == "" || text ==" ") {
 		 return "";
-  } else {
+  } else if(text.charAt(0) == " "){
+		return text.charAt(1) 
+  }
+	 else {
     return text.charAt(0); 
   }
 }
