@@ -1,6 +1,10 @@
 function firstChar(text) {
   // your code here
-	return text.charAt(0)
+	 if (text.length > 0) {
+    return text.charAt(0);
+  } else {
+    return ""; 
+  }
 }
 
 // Do not change the code below
