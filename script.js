@@ -1,16 +1,14 @@
 function firstChar(text) {
   // your code here
-	 if (text == "" || text ==" ") {
-		 return "";
-  } else if(text.charAt(0) == " "){
-		return text.charAt(1) 
+	 for (let i = 0; i < text.length; i++) {
+    if (text[i] !== ' ') {
+      return text[i];
+    }
   }
-	 else {
-    return text.charAt(0); 
-  }
+  return '';
 }
 
 // Do not change the code below
 //Uncomment the following line to show the prompt popup
-//const text = prompt("Enter text:");
+const text = prompt("Enter text:");
 alert(firstChar(text));
